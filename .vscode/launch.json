@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "command": "npm start",
+            "name": "Launch Express",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "pwa-msedge",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/public"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Debug App",
+            "configurations": [
+                "Launch Express",
+                "Launch Edge"
+            ]
+        }
+    ]
+}
