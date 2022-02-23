@@ -2,10 +2,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "command": "npm start",
-            "name": "Launch Express",
+            "name": "Watch Express",
+            "command": "npm run watch",
             "request": "launch",
-            "type": "node-terminal"
+            "type": "node-terminal",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+        {
+            "name": "Launch Express",
+            "command": "npm start",
+            "request": "launch",
+            "type": "node-terminal",
+            "env": {
+                "NODE_ENV": "development"
+            }
         },
         {
             "name": "Launch Edge",
@@ -19,7 +31,7 @@
         {
             "name": "Debug App",
             "configurations": [
-                "Launch Express",
+                "Watch Express",
                 "Launch Edge"
             ]
         }
