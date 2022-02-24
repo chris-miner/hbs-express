@@ -156,6 +156,7 @@ DevTools inspector and it updates the css file in your project automatically.  B
 in order for it to do that, the DevTools need to know that
 `http://localhost:8080/stylesheets/style.css` is actually under `public/stylesheets/style.css`.
 Otherwise you end up with an error like this one:
+
 <img width="462" alt="155553542-f2c8b434-ee28-4481-b54b-e78252b3a7b5" src="https://user-images.githubusercontent.com/94078897/155611262-0773975d-b14a-48b4-8a9c-602a1f9b07e3.png">
 
 The fix is to set up the Edge DevTools `pathMapping` for your workspace:
