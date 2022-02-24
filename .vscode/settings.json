@@ -1,0 +1,6 @@
+{
+    "vscode-edge-devtools.pathMapping": {
+        "/": "${workspaceFolder}/public"
+    },
+    "vscode-edge-devtools.mirrorEdits": true
+}

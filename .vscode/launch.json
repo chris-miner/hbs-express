@@ -24,7 +24,10 @@
             "request": "launch",
             "type": "pwa-msedge",
             "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}/public"
+            "webRoot": "${workspaceFolder}/public",
+            "runtimeArgs": [
+                "--headless"
+            ],
         }
     ],
     "compounds": [

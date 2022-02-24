@@ -44,8 +44,9 @@ app.use(function (err, req, res, next) {
 /* for development purposes */
 if (process.env.NODE_ENV === "development") {
   const livereload = require("livereload");
-  const liveReloadServer = livereload.createServer();
+  const liveReloadServer = livereload.createServer({ extraExts: ["hbs"] });
   liveReloadServer.watch(path.join(__dirname, 'public'));
+  liveReloadServer.watch(path.join(__dirname, 'views'));
 
   liveReloadServer.server.once("connection", () => {
     setTimeout(() => {
