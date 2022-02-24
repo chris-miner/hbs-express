@@ -11,15 +11,6 @@
             }
         },
         {
-            "name": "Launch Express",
-            "command": "npm start",
-            "request": "launch",
-            "type": "node-terminal",
-            "env": {
-                "NODE_ENV": "development"
-            }
-        },
-        {
             "name": "Launch Edge",
             "request": "launch",
             "type": "pwa-msedge",
